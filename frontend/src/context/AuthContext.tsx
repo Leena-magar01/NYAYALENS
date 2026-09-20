@@ -43,6 +43,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     initAuth();
   }, []);
 
+  const extractError = (err: any, fallback: string): string => {
+    if (!err.response) {
+      return 'Network Error: Cannot connect to backend API server. Check if your backend is running or asleep.';
+    }
+    if (err.response.status === 404) {
+      return 'API 404 Error: Backend API URL not found. Ensure VITE_API_BASE_URL environment variable is set in Vercel settings to your Render backend URL.';
+    }
+    const detail = err.response.data?.detail;
+    if (typeof detail === 'string') return detail;
+    if (Array.isArray(detail) && detail.length > 0) {
+      return detail.map((d: any) => d.msg || d.message || JSON.stringify(d)).join(', ');
+    }
+    return fallback;
+  };
+
   const login = async (email: string, password: string) => {
     setIsLoading(true);
     setError(null);
@@ -53,7 +68,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const userData = await authService.getCurrentUser();
       setUser(userData);
     } catch (err: any) {
-      const msg = err.response?.data?.detail || 'Login failed. Please check your credentials.';
+      const msg = extractError(err, 'Login failed. Please check your credentials.');
       setError(msg);
       throw new Error(msg);
     } finally {
@@ -71,7 +86,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const userData = await authService.getCurrentUser();
       setUser(userData);
     } catch (err: any) {
-      const msg = err.response?.data?.detail || 'Registration failed. Please try again.';
+      const msg = extractError(err, 'Registration failed. Please try again.');
       setError(msg);
       throw new Error(msg);
     } finally {
