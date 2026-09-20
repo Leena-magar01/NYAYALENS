@@ -1,0 +1,7 @@
+RESIDENTIAL LEASE AGREEMENT
+This Agreement is entered into on January 15, 2026, by and between Apex Realty Corp ("Landlord") and John Doe ("Tenant").
+1. RENT & PAYMENT TERMS: Tenant agrees to pay monthly rent of INR 25,000 due on the 1st day of each month. A security deposit of INR 50,000 shall be remitted prior to move-in. Late payment after the 5th day incurs a penalty fee of INR 1,000 per week.
+2. LEASE TERM & AUTOMATIC RENEWAL: The lease begins on February 1, 2026, and expires on January 31, 2027. This lease shall automatically renew for a further 12-month period unless Tenant provides 60 days written notice prior to expiration.
+3. MAINTENANCE & OBLIGATIONS: Tenant is responsible for keeping premises clean and repairing minor electrical damage under INR 1,500.
+4. TERMINATION & PENALTY: Early termination by Tenant requires 30 days notice and forfeiture of 50% security deposit.
+5. DISPUTE RESOLUTION: Any dispute shall be resolved via binding arbitration in Mumbai.

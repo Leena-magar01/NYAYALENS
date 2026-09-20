@@ -1,0 +1,7 @@
+EMPLOYMENT AGREEMENT
+This Employment Agreement is entered into on March 1, 2026, by and between Zenith Tech Ltd ("Employer") and Jane Smith ("Employee").
+1. COMPENSATION & SALARY: Employer agrees to pay an annual salary of INR 12,000,000 payable monthly on the last working day.
+2. PROBATION & NOTICE PERIOD: Employee shall serve a 3-month probation period. Termination during probation requires 15 days notice; thereafter 90 days notice is required by either party.
+3. CONFIDENTIALITY & NON-SOLICITATION: Employee shall maintain strict confidentiality during and after employment for 24 months.
+4. INTELLECTUAL PROPERTY: All inventions, code, and patents developed during employment belong exclusively to Employer.
+5. DISPUTE RESOLUTION: Disputes shall be submitted to the courts of Bengaluru.

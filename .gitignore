@@ -1,0 +1,41 @@
+# Virtual Environments & Dependencies
+venv/
+env/
+ENV/
+node_modules/
+backend/venv/
+
+# Build & Distributable Outputs
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+
+# Databases & User Uploads
+*.db
+*.sqlite
+*.sqlite3
+backend/nyayalens.db
+backend/uploads/
+uploads/
+logs/
+backend/logs/
+
+# Environment Variables & Secrets
+.env
+backend/.env
+frontend/.env
+*.local
+
+# Python Cache & Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+
+# IDE & Editor Configs
+.vscode/
+.idea/
+*.swp
+*.swo
